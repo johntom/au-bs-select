@@ -18,7 +18,7 @@
   top: 0;
 }
 </style> -->
-  <h3>Aurelia Bootstrap Select 1a</h3>
+  <h3>Aurelia Bootstrap Select 1b</h3>
   <abp-select collection.bind="allCondiments"></abp-select>
 <!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
 liveSearch="true" showSubtext="true" 
@@ -34,7 +34,8 @@ selected-item.bind="condimentItem" selected-value.bind="condimentValue" collecti
 </abp-select>
 <div>
   Value: ${condimentValue}
-  Item: ${condimentItem | stringify}
+  <!-- Item: ${condimentItem | stringify} -->
+  Item: ${condimentItem[0].option}
 </div>
 <!-- <div>
 <select  class="selectpicker show-tick">
