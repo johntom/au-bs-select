@@ -1,5 +1,5 @@
 import 'bootstrap-select/css/bootstrap-select.min.css';
-
+import jQuery from 'jquery';
 export class BootstrapSelect {
   pickerOptions = {
     actionsBox: true,
