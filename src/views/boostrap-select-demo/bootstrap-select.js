@@ -1,6 +1,7 @@
 
+import 'bootstrap-select/css/bootstrap-select.min.css';
 import {bindable, inject} from 'aurelia-framework';
-import moment from 'moment';
+// import moment from 'moment';
 
 @inject()
 export class BootstrapSelect {
