@@ -2,15 +2,20 @@
 	<require from="../../resources/value-converters/stringify"></require>
 
 	<h3>Aurelia Bootstrap Select </h3>
+  
+	<div class="col-md-12">
+		<div class="form-group">
+      <div>
+	<label class="control-label">Basic - Simple String Collection with Searcg </label>
 	<abp-select empty-on-null="true" picker-options.bind="{ liveSearch: true ,liveSearchPlaceholder:'search',actionsBox:true}"
 	 collection.bind="allCondimentsbase"></abp-select>
-	<br>
+	</div>
 	<div> actionsBox
 		<abp-select picker-options.bind="{ actionsBox: true }" collection.bind="allCondiments"></abp-select>
 
 	</div>
-	<div class="col-md-12">
-		<div class="form-group">
+
+
 			<label class="control-label">Basic - String Collection</label>
 			<div>Value: ${camping}<br /> Item: ${campingValue}</div>
 			<div>
