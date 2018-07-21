@@ -6,6 +6,15 @@ import { bindable } from 'aurelia-framework';
 export class BootstrapSelect {
   @bindable condimentItem;
   @bindable condimentValue;
+   condimentItemChanged(newItem) {
+    // output --> { id: 2, option: 'Mustard', company: 'French\'s' }
+    console.log('Item changed:', newItem);
+  }
+
+  condimentValueChanged(newValue) {
+    // output --> 2
+    console.log('Value changed:', newValue)
+  }
   pickerOptions = {
     actionsBox: true,
     dropupAuto: true
@@ -20,6 +29,7 @@ export class BootstrapSelect {
   constructor() {
 
   }
+  
   // activate() {
   //   $(document).ready(function () {
   //     $('.selectpicker').selectpicker({
