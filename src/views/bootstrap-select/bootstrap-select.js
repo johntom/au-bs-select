@@ -23,13 +23,13 @@ export class BootstrapSelect {
   //   // output --> 2
   //   console.log('Value changed:', newValue)
   // }
-  // pickerOptions = {
-  //   // actionsBox: true,
-  //   // dropupAuto: true
-  //   liveSearch: true ,
-  //   liveSearchPlaceholder:'search',
-  //   liveSearchStyle:'contains' 
-
+  selectOptions = {
+    liveSearch: true,
+    showSubtext: true,
+    showTick: true,
+    selectedTextFormat: 'count > 3',
+    actionsBox: true
+  };
   //  };
   allCondimentsbase = [
     { id: 1, option: 'Ketchup', group: 'Condiments' },
