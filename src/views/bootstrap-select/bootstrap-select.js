@@ -1,6 +1,11 @@
 import 'bootstrap-select/css/bootstrap-select.min.css';
-import jQuery from 'jquery';
+// import jQuery from 'jquery';
+// import { inject } from 'aurelia-framework';
+import { bindable } from 'aurelia-framework';
+
 export class BootstrapSelect {
+  @bindable condimentItem;
+  @bindable condimentValue;
   pickerOptions = {
     actionsBox: true,
     dropupAuto: true
@@ -15,13 +20,13 @@ export class BootstrapSelect {
   constructor() {
 
   }
-  activate() {
-    $(document).ready(function () {
-      $('.selectpicker').selectpicker({
-        liveSearch: true,
-        showSubtext: true
-      });
-    });
+  // activate() {
+  //   $(document).ready(function () {
+  //     $('.selectpicker').selectpicker({
+  //       liveSearch: true,
+  //       showSubtext: true
+  //     });
+  //   });
 
-  }
+  // }
 }

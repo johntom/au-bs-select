@@ -1,5 +1,5 @@
 <template>
-  <style>
+  <!-- <style>
     .bootstrap-select .dropdown-menu>li>a small.muted {
   display: none;
 }
@@ -10,15 +10,15 @@
 }
 
 .bootstrap-select .dropdown-toggle .filter-option:before {
-  /* content: "Size:"; */
+  content: "Size:";
   font-size: 14px;
   font-weight: 700;
   position: absolute;
   left: 0;
   top: 0;
 }
-</style>
-  <h3>Aurelia Bootstrap Select 9</h3>
+</style> -->
+  <h3>Aurelia Bootstrap Select 1a</h3>
   <abp-select collection.bind="allCondiments"></abp-select>
 <!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
 liveSearch="true" showSubtext="true" 
@@ -28,7 +28,15 @@ selected-item.bind="condiment" selected-value.bind="condimentValue" disabled="fa
 collection.bind="allCondiments" 
 data-live-search="true" data-show-subtext="true" 
  object-key="id" element.bind="selectCondiment"></abp-select>
+
+<abp-select picker-options.bind="selectOptions" 
+selected-item.bind="condimentItem" selected-value.bind="condimentValue" collection.bind="myCollection" object-key="id">
+</abp-select>
 <div>
+  Value: ${condimentValue}
+  Item: ${condimentItem | stringify}
+</div>
+<!-- <div>
 <select  class="selectpicker show-tick">
   <option data-hidden="true">Select</option>
   <option data-subtext="AUS">Australia</option>
@@ -37,5 +45,5 @@ data-live-search="true" data-show-subtext="true"
   <option data-subtext="GBR">United Kingdom</option>
   <option data-subtext="USA">United States of America</option>
 </select>
-</div>
+</div> -->
 </template>
