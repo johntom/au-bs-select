@@ -1,4 +1,27 @@
 <template>
+  
+  <h3>Aurelia Bootstrap Select 1d</h3>
+  <abp-select collection.bind="allCondiments"></abp-select>
+<!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
+liveSearch="true" showSubtext="true" 
+-->
+  <abp-select picker-options.bind="selectOptions" empty-on-null="true" 
+selected-item.bind="condiment" selected-value.bind="condimentValue" disabled="false" 
+collection.bind="allCondiments" 
+data-liveSearch="true" 
+ object-key="id" ></abp-select>
+<!-- 
+<abp-select picker-options.bind="selectOptions" 
+selected-item.bind="condimentItem" selected-value.bind="condimentValue" collection.bind="myCollection" object-key="id">
+</abp-select>
+<div>
+  Value: ${condimentValue}
+  Item: ${condimentItem | stringify}
+  
+</div> -->
+
+</template>
+<!-- 
   <!-- <style>
     .bootstrap-select .dropdown-menu>li>a small.muted {
   display: none;
@@ -18,26 +41,8 @@
   top: 0;
 }
 </style> -->
-  <h3>Aurelia Bootstrap Select 1d</h3>
-  <abp-select collection.bind="allCondiments"></abp-select>
-<!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
-liveSearch="true" showSubtext="true" 
--->
-  <abp-select picker-options.bind="selectOptions" empty-on-null="true" 
-selected-item.bind="condiment" selected-value.bind="condimentValue" disabled="false" 
-collection.bind="allCondiments" 
-data-liveSearch="true" 
- object-key="id" element.bind="selectCondiment"></abp-select>
-
-<abp-select picker-options.bind="selectOptions" 
-selected-item.bind="condimentItem" selected-value.bind="condimentValue" collection.bind="myCollection" object-key="id">
-</abp-select>
-<div>
-  Value: ${condimentValue}
-  <!-- Item: ${condimentItem | stringify} -->
   
-</div>
-<!-- <div>
+  <div>
 <select  class="selectpicker show-tick">
   <option data-hidden="true">Select</option>
   <option data-subtext="AUS">Australia</option>
@@ -47,4 +52,3 @@ selected-item.bind="condimentItem" selected-value.bind="condimentValue" collecti
   <option data-subtext="USA">United States of America</option>
 </select>
 </div> -->
-</template>
