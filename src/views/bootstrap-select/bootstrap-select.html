@@ -8,10 +8,10 @@
       <div>
 	<label class="control-label">Basic - Simple String Collection with Searcg </label>
 	<abp-select empty-on-null="true" picker-options.bind="{ liveSearch: true ,liveSearchPlaceholder:'search',actionsBox:true}"
-	 collection.bind="allCondimentsbase"></abp-select>
+	 multiple="true"collection.bind="allCondimentsbase"></abp-select>
 	</div>
 	<div> actionsBox
-		<abp-select picker-options.bind="{ actionsBox: true }" collection.bind="allCondimentsbase"></abp-select>
+		<abp-select multiple="true" picker-options.bind="{ actionsBox: true }" collection.bind="allCondimentsbase"></abp-select>
 
 	</div>
 
