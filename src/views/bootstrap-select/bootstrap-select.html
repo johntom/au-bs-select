@@ -20,10 +20,13 @@
 </style>
   <h3>Aurelia Bootstrap Select 6</h3>
   <abp-select collection.bind="allCondiments"></abp-select>
-<!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" -->
+<!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
+liveSearch="true" showSubtext="true" 
+-->
   <abp-select picker-options.bind="selectOptions" empty-on-null="true" 
 selected-item.bind="condiment" selected-value.bind="condimentValue" disabled="false" 
-collection.bind="allCondiments" liveSearch="true" showSubtext="true" data-live-search="true" 
+collection.bind="allCondiments" 
+data-live-search="true" data-show-subtext="true" 
  object-key="id" element.bind="selectCondiment"></abp-select>
 
 </template>
