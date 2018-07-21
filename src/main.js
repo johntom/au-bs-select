@@ -1,10 +1,11 @@
 
+import moment from 'moment';
 import 'babel-polyfill';
 import * as Bluebird from 'bluebird';
 
 import 'jquery';
 import 'bootstrap';
-import moment from 'moment';
+
 export async function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
