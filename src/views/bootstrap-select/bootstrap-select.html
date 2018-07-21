@@ -5,15 +5,16 @@
 <!-- data-mapping-structure.bind="selectMappingStructure" data-live-search="true" 
 liveSearch="true" showSubtext="true" 
 -->
-  <abp-select  picker-options.bind="selectOptions" empty-on-null="true" 
+  <!-- <abp-select  picker-options.bind="selectOptions" empty-on-null="true" 
 selected-item.bind="condiment" selected-value.bind="condimentValue"
 disabled="false" 
 collection.bind="allCondiments" 
+picker-options.bind=
 data-liveSearch="true"  data-liveSearchStyle='contains'
 liveSearchPlaceholder	='ser'
- ></abp-select>
+ ></abp-select> -->
 
-
+<abp-select picker-options.bind="{ liveSearch: true }" collection.bind="allCondiments" ></abp-select>
 <!--  object-key="id"
 <abp-select picker-options.bind="selectOptions" 
 selected-item.bind="condimentItem" selected-value.bind="condimentValue" collection.bind="myCollection" object-key="id">
