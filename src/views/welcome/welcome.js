@@ -3,7 +3,7 @@ export class Welcome {
   
   constructor() {
    // let nDate = moment().format('MM/DD/YYYY')
-    this.heading = '1 - Welcome to the Aurelia Navigation App - 8 '// + nDate
+    this.heading = '1 - Welcome to the Aurelia Navigation App - 1e '// + nDate
   }
 
 }
