@@ -37,6 +37,5 @@ export class BootstrapSelect {
   //       showSubtext: true
   //     });
   //   });
-
   // }
 }
