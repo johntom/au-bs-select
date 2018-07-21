@@ -15,10 +15,14 @@ export class BootstrapSelect {
     // output --> 2
     console.log('Value changed:', newValue)
   }
-  // pickerOptions = {
-  //   actionsBox: true,
-  //   dropupAuto: true
-  // };
+  pickerOptions = {
+    // actionsBox: true,
+    // dropupAuto: true
+    liveSearch: true ,
+    liveSearchPlaceholder:'search',
+    liveSearchStyle:'contains' 
+
+  };
   allCondiments = [
     { id: 1, option: 'Ketchup', group: 'Condiments' },
     { id: 2, option: 'Mustard', group: 'Condiments' },
