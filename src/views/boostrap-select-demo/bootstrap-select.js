@@ -10,7 +10,7 @@ export class BootstrapSelect {
   @bindable selectCondiment;
   @bindable selectStyledCondiment;
   @bindable selectPicnic;
-  @bindable tag;
+  // @bindable tag;
 
   activeDate = null;
   dateEntered = null;
@@ -67,11 +67,11 @@ export class BootstrapSelect {
     // this.condimentValue = 3;
   }
 
-  pickerChanged() {
-    this.picker.events.onChange = (e) => console.log('onChange');
-    this.picker.events.onUpdate = (e) => console.log('onUpdate');
-    this.picker.methods.daysOfWeekDisabled([0, 6]); // disable Sunday & Saturday
-  }
+  // pickerChanged() {
+  //   this.picker.events.onChange = (e) => console.log('onChange');
+  //   this.picker.events.onUpdate = (e) => console.log('onUpdate');
+  //   this.picker.methods.daysOfWeekDisabled([0, 6]); // disable Sunday & Saturday
+  // }
 
   selectPicnicChanged() {
     this.selectPicnic.events.onChanged = (e) => console.log('onChanged');
