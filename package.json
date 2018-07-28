@@ -37,6 +37,16 @@
       "meta": {
         "deps": ["bootstrap", "bootstrap-select", "jquery"]
       }
+    },
+      "moment": {
+      "map": "npm:moment@2.22.2",
+      "package": {
+        "defaultExtension": "js",
+        "main": "moment.js"
+      },
+      "meta": {
+        "deps": []
+      }
     }
   },
   "dependencies": {
